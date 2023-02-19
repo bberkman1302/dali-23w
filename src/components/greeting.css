@@ -1,0 +1,19 @@
+.animated-text {
+  animation: grad 7s linear infinite;
+  background: linear-gradient(to right, rgb(0, 48, 112), rgb(38, 0, 67), rgb(1, 115, 119),rgb(56, 211, 167), rgb(108, 156, 31), rgb(6, 95, 118), rgb(66, 113, 125), rgb(0, 48, 112));
+  background-size: 400%;
+  font-weight: bold; 
+  -webkit-background-clip: text;
+  background-clip: none; 
+  font-size: 80px; 
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes grad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}

@@ -1,0 +1,17 @@
+
+.signin{
+  color: black;
+  font-size: 15px; 
+  font-weight: bold; 
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border: 3px solid black;
+  padding: 10px 20px;
+}
+
+
+
+.signin:hover {
+  color: rgb(223, 223, 223);
+  background-color: black;
+  cursor: pointer;
+}

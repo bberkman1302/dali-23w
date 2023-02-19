@@ -1,0 +1,11 @@
+.song-list{
+  display: flex;
+  flex-direction: row; 
+  margin-top: 20px;
+}
+
+#songinfo{
+  color: rgb(21, 21, 21); 
+  font-size: 20px; 
+  font-weight: bold;
+}

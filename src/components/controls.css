@@ -1,0 +1,11 @@
+.controls{
+  margin-top: 10px; 
+}
+
+.icon{
+  font-size: 40px; 
+}
+
+.icon:hover {
+  cursor: pointer;
+}
