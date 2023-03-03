@@ -9,12 +9,11 @@ function Weather() {
 
   useEffect(() => {
     const API_KEY = '97aeef7741b917ddc83d17eddb1cd6ec';
-    
     //get user's location coordinates
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;
+    
 
-      console.log("hello")
       //fetch weather data based on user's location
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${API_KEY}`;
       fetch(url)
