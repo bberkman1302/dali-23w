@@ -19,7 +19,7 @@ function Player() {
         audio.removeEventListener('ended', handleSongEnded);
       }
     };
-  }, [audio]);
+  });
   
   const handleSongEnded = () => {
     setTimeout(() => {
@@ -31,7 +31,7 @@ function Player() {
   //fetches songs from iTunes API, selecting one at random
   const handleSearch = async (term) => {
     try {
-      if(audio != ''){
+      if(audio !== ''){
         audio.pause()
       }
       setIsPlaying(true)
@@ -82,7 +82,7 @@ function Player() {
       </div>
       <div id = "songwrap">
         <Songinfo song={song} />
-        {audio != '' &&
+        {audio !== '' &&
           <Controls isPlaying = {isPlaying} setPlaying={handleSetIsplaying} onPlay = {handlePlay} onPause = {handlePause}></Controls>
         }
       </div>

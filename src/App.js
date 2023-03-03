@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Weather from './components/weather.js'
 import Greeting from './components/greeting.js'
 import Player from './components/player.js'

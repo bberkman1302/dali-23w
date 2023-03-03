@@ -6,7 +6,7 @@ function Songinfo(props) {
 
   return (
     <div className="song-list">
-      {song != "" &&
+      {song !== "" &&
         <div id = "songinfo">{song.trackName} by {song.artistName}</div>
       }
       

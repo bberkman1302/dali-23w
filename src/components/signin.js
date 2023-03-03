@@ -34,7 +34,7 @@ function SignIn(props) {
       }
     });
     return unsubscribe;
-  }, []);
+  });
   
 
   //helper function to sign in with google
@@ -43,8 +43,6 @@ function SignIn(props) {
     const auth = getAuth();
     signInWithPopup(auth, provider) //initiates google popup
       .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
         const userdata = result.user;
         console.log(userdata.displayname)
       })
